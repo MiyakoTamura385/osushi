@@ -1,3 +1,11 @@
+@import "variables";
+
+// Import dependencies
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "mixins";
+@import "global";
+
 @charset "UTF-8";
 
 /* 共通部分
@@ -6,7 +14,9 @@ html {
   font-size: 100%;
 }
 body {
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
   background-color: #eddcbc;
 }
 
@@ -24,7 +34,7 @@ body {
 
 /* nav
 ----------------------------------------------*/
-.main-nav  {
+.main-nav {
   display: flex;
   font-size: 1.25rem;
   text-transform: uppercase;
@@ -43,37 +53,39 @@ body {
   border-bottom: 5px solid #fff;
 }
 
-
-
 /* スライダー
 -----------------------*/
 
 .slider img {
-    max-width: 100%;
-    max-height: 100%;
-    height: 100vh;
-    width: auto\9; /* ie8 */
-    margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100vh;
+  width: auto\9; /* ie8 */
+  margin: 0 auto;
 }
 
 .slider {
-  width:1000px; 
-  margin:0 auto;
-  padding:0 0 48px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 0 48px;
   outline: none;
 }
 
 /* ホーム
 -----------------------------*/
 .home_image {
-  background-image: linear-gradient(to right, rgba(0,0,0,0.75)0%, rgba(0,0,0,0.25)50%, rgba(0,0,0,0.75)100%);
-  text-align: center; 
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.25) 50%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+  text-align: center;
   border: none;
-  background-size: cover; 
+  background-size: cover;
   max-width: 100%;
   margin: 15px 10px;
   padding: 20px;
-
 }
 
 .box {
@@ -101,21 +113,19 @@ body {
 }
 .pict img {
   display: block;
+  width: 100%;
+  max-width: 800px;
 }
 .box:nth-child(even) {
   flex-direction: row-reverse;
 }
-
-
-
-
 
 /* フッター
 ---------------------*/
 footer {
   background-color: #000000;
   text-align: center;
-  padding: 20px ;
+  padding: 20px;
 }
 footer p {
   color: #fff;
@@ -155,17 +165,15 @@ footer p {
   margin-top: -100px;
 }
 
-
 /* iframe */
 iframe {
   width: 100%;
   height: 100%;
 }
 
-
 /* 戻るボタン
 --------------------------------------*/
-#content{
+#content {
   position: relative;
 }
 
@@ -173,7 +181,7 @@ iframe {
   position: fixed;
   bottom: 10px;
   right: 10px;
-   
+
   /*-----装飾-----*/
   width: 64px;
   height: 64px;
@@ -182,8 +190,6 @@ iframe {
   background-color: #333;
   color: #fff;
 }
-
-
 
 /* モバイル版
 ---------------------------------------*/
@@ -201,13 +207,13 @@ iframe {
     flex-wrap: wrap;
     font-size: 1.25rem;
   }
-  
+
   .main-nav {
     display: flex;
     width: 100%;
   }
 
-/* ホーム部分 */
+  /* ホーム部分 */
 
   .home_image {
     background-position: center;
@@ -215,33 +221,29 @@ iframe {
     width: 1000px;
   }
 
-/* 地図 */
-.wrapper {
-  flex-direction: column;
-}  
-.location-map {
+  /* 地図 */
+  .wrapper {
+    flex-direction: column;
+  }
+  .location-map {
     width: 1000px;
     height: 500px;
     text-align: center;
     padding: 20px 10px;
-  
   }
   .location-info {
     width: 1000px;
   }
   .location-info h3 {
-    font-size: 3.0rem;
+    font-size: 3rem;
   }
   .location-info p {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
 
-/* フッター */
+  /* フッター */
   footer {
     width: 1000px;
     padding: 20px 10px;
   }
-
-
 }
- 
