@@ -1,5 +1,3 @@
-const { NONAME } = require("node:dns");
-
 $('.slider').slick({
   autoplay: true,
   arrows: false,
@@ -17,9 +15,7 @@ $(document).ready(function(){
 });
 
 //試し　スライドショー////
-$(
-  
-  function () {
+$(function () {
   $('.slideshow').each(function () {
     var $slides = $(this).find('img'),
         slideCount = $slides.length,
@@ -34,6 +30,3 @@ $(
     }
   })
 })
-var $slides = $(this).find('img'),
-    slideCount = $slides.length,
-    currentIndex = 0;
