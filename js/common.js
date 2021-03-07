@@ -1,3 +1,5 @@
+const { NONAME } = require("node:dns");
+
 $('.slider').slick({
   autoplay: true,
   arrows: false,
