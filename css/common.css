@@ -46,130 +46,49 @@ body {
   border-bottom: 5px solid #fff;
 }
 
-/* スライダー
------------------------*/
 
-.slider img {
-    background-size: cover;
-    height: 100vh;
-    width: auto\9; /* ie8 */
-    margin: 0 auto;
-}
-
-.slider {   
-  margin:0 auto;
-  padding:0 0 48px;
-  outline: none;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 /* ホーム
 -----------------------------*/
-/* 中央部分*/
-.box {
-  display:flex;
-  flex-direction: column;
-  background-image: linear-gradient(to right, rgba(0,0,0,0.75)0%, rgba(0,0,0,0.25)50%, rgba(0,0,0,0.75)100%);
-  border: none;
-  margin-bottom: 100px;
-}
-
-.text {
-  width: 100%;
-  text-align: center;
-  list-style: none;
-  padding-top: 20px;
-}
-
-h3 {
-  font-size: 40px;
-  margin: 0;
-  padding-bottom: 20px;
-}
-
-.text li {
-  font-size: 26px;
-  color: #000000;
-}
-.text p {
-  font-size: 20px;
-}
-
-.photos {
-  max-width: 100%;
-  text-align: center;
-  min-height: 0%;
-  margin-bottom: 50%;
-}
-
-.photos img {
-  max-width: 100%;
-  height:550px;
-  box-shadow: 0 0 8px rgb(24, 1, 1);
-}
-
-/* 横並び */
-.box_1 {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-image: linear-gradient(to right, rgba(0,0,0,0.75)0%, rgba(0,0,0,0.25)50%, rgba(0,0,0,0.75)100%);
-  border: none;
-  margin-bottom: 100px;
-}
-.box_1 p{
-  text-align: left;
-  margin-left: 73px;
-}
-
-.box_1 li {
-  display: inline-block;
-  border: 1px solid #fff;
-  padding: 1.25rem 3rem;
-  margin-top: 40px;
-  color: #fff;
-}
-
-
-/* 画像アニメーション*/
-.photos{
+/* スライドショー　*/
+.slideshow {
+  height: 465px;
+  min-width: 960px;
+  overflow: hidden;
   position: relative;
+  margin-top: 20px;
+  margin-bottom: 7.5rem;
 }
-
-.photos img{
+.slideshow img {
+  display: none;
+  left: 63.5%;
+  margin-left: -800px;
   position: absolute;
-  left: 0;
-  right: 0;
-  margin: 30px auto;
-  animation: photo 25s infinite;
-  opacity: 0;
 }
 
-@keyframes photo{
-  0%{ opacity: 0;}
-  15%{ opacity: 1;}
-  20%{ opacity: 1;}
-  35%{ opacity: 0;}
-  100%{ opacity: 0;}
+/* こだわり部分 */
+#main_homewrapper {
+  background-image: url("../img/uni1.jpg");
+  background-size: cover;
+}
+div.main_homewrapper {
+  width: 100%;
+  height: 380px;
+  padding-top: 100px;
+  margin-bottom: 24px;
+}
+h1#mainwrapper {
+  width: 376px;
+  height: 80px;
+  line-height: 80px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 34px;
+  color: #595757;
+  background-color: rgba(255,255,255,.6);
 }
 
-.photos img:nth-of-type(1) {
-    animation-delay: 0s;
-}
-.photos img:nth-of-type(2) {
-    animation-delay: 5s;
-}
-.photos img:nth-of-type(3) {
-    animation-delay: 10s;
-}
-.photos img:nth-of-type(4) {
-    animation-delay: 15s;
-}
-.photos img:nth-of-type(5) {
-    animation-delay: 20s;
-}
+
 
 /* 店舗情報
 ------------------------------------*/
@@ -233,18 +152,6 @@ iframe {
   color: #fff;
 }
 
-/* フッター
----------------------*/
-footer {
-  background-color: #000000;
-  text-align: center;
-  padding: 20px ;
-}
-footer p {
-  color: #fff;
-  font-size: 0.875rem;
-}
-
 /* 一番下のメニューバー */
 .botomm-nav  {
   display: flex;
@@ -263,6 +170,18 @@ footer p {
 .botomm-nav a:hover {
   color: #eddcbc;
   text-decoration: none;
+}
+
+/* フッター
+---------------------*/
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 20px ;
+}
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
 }
 
 
@@ -495,26 +414,6 @@ h1#menuwrapper {
 .flexpolicy_1 p img {
   width: 80%;
 }
-
-
-/*  試し　スライドショー
------------------------------*/
-.slideshow {
-  height: 465px;
-  min-width: 960px;
-  overflow: hidden;
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 7.5rem;
-}
-.slideshow img {
-  display: none;
-  left: 63.5%;
-  margin-left: -800px;
-  position: absolute;
-} 
-
-
 
 
 
