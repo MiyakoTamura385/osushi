@@ -1,12 +1,4 @@
 // Functions
-$(".slider").slick({
-  autoplay: true,
-  arrows: false,
-  dots: false,
-  autoplaySpeed: 1500,
-  speed: 1500,
-});
-
 $(function() {
 
   $('#open_nav').on('click' , function(){
@@ -28,5 +20,13 @@ $(function() {
   });
 });
 var $slides = $(this).find('img'),
-    slideCount = $slides.length,
-    currentIndex = 0;
+  slideCount = $slides.length,
+  currentIndex = 0;
+
+  $(".slider").slick({
+    autoplay: true,
+    arrows: false,
+    dots: false,
+    autoplaySpeed: 1500,
+    speed: 1500,
+  });
