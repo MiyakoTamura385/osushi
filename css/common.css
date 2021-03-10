@@ -61,7 +61,7 @@ body {
 /* スライドショー　*/
 .slideshow {
   width: 100%;
-  height: 465px;
+  height: 480px;
   min-width: 960px;
   overflow: hidden;
   position: relative;
@@ -81,7 +81,7 @@ body {
     margin-bottom: 0;
   }
   .slideshow img {
-    width: 100%;
+    width: 80%;
     height: 350px;
   }
 }
@@ -397,13 +397,13 @@ header .container {
 /* 見出しの部分
 ----------------------------------*/
 #menu_homewrapper {
-  background-image: url("../img/kodawari_top4.jpg");
+  background-image: url("../img/menu1600toro.jpg");
   background-size: cover;
   object-fit: cover;
 }
 div.homewrapper {
   width: 100%;
-  height: 380px;
+  height: 420px;
   padding-top: 100px;
   margin-bottom: 24px;
 }
@@ -472,7 +472,7 @@ h1#menuwrapper {
 /* kodawari html
 --------------------------------*/
 #kodawari_homewrapper {
-  background-image: url("../img/kodawarihaikei2.jpg");
+  background-image: url("../img/kodawari1600syokunin.jpg");
   background-size: cover;
   object-fit: cover;
 }
@@ -534,7 +534,7 @@ h1#menuwrapper {
 /* contact.html 
 ---------------------------------------*/
 #contact_homewrapper {
-  background-image: url("../img/hashi1600.jpg");
+  background-image: url("../img/contact1600hashi.jpg");
   background-size: cover;
   object-fit: cover;
 }
@@ -654,10 +654,11 @@ body {
     width: 100%;
   }
   .location-info h3 {
-    font-size: 2rem;
+    font-size: 1.65rem;
   }
   .location-info p {
     font-size: 1.0rem;
+    line-height: 0.025rem;
   }
 /* フッター */
   footer {
