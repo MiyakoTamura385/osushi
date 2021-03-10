@@ -21,6 +21,7 @@ body {
   justify-content: space-between;
   padding: 0.5rem;
   background-color: #eddcbc;
+  width: 100%;
 }
 #head_line a {
   font-size: 27px;
@@ -29,6 +30,7 @@ body {
 /* nav
 ----------------------------------------------*/
 .main-nav  {
+  width: 100%;
   display: flex;
   font-size: 1.25rem;
   text-transform: uppercase;
@@ -53,6 +55,7 @@ body {
 -----------------------------*/
 /* スライドショー　*/
 .slideshow {
+  width: 100%;
   height: 465px;
   min-width: 960px;
   overflow: hidden;
@@ -91,6 +94,7 @@ h1#mainwrapper {
   color: #595757;
   background-color: rgba(255,255,255,.6);
 }
+
 #main_homewrapper p {
   position: absolute;
   width: 100%;
@@ -102,6 +106,14 @@ h1#mainwrapper {
   font-size: 17px;
   line-height: 50px;
   line-height: 2.5rem;
+}
+@media (max-width: 600px) {
+  h1#mainwrapper {
+  width: 170px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 2rem;
+  }
 }
 /* お知らせ部分 */
 #main_infomation {
@@ -138,6 +150,11 @@ h1#infotext {
   font-size: 17px;
   line-height: 50px;
   line-height: 2.5rem;
+}
+@media (max-width: 600px) {
+  #main_infomation {
+    display: none;
+  }
 }
 
 
@@ -469,6 +486,11 @@ h1#menuwrapper {
 
 /* contact.html 
 ---------------------------------------*/
+#contact_homewrapper {
+  background-image: url("../img/hashi1600.jpg");
+  background-size: cover;
+  object-fit: cover;
+}
 #contact {
   background-color: rgba(61, 60, 60, 0);
   min-height: 100vh;
@@ -542,61 +564,67 @@ input[type="submit"] {
 ---------------------------------------*/
 
 @media (max-width: 600px) {
+  /*　画面サイズが600px以下の場合ここの記述が適用される　*/
+  * {
+    float: none;
+    position: static;
+  }
+   
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
   /* ヘッダー部分 */
-
-
   #head_line {
-    padding: 4rem;
-    width: 1500px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    font-size: 2.5rem;
-  }
-  
-  .main-nav {
-    display: flex;
-    width: 100%;
-  }
+    font-size: 15px;
+  }  
+  .main-nav  { display: none}
+  .botomm-nav {display: none}
 
 /* ホーム部分 */
+body {
+  line-height: 28px;
+  font-size: 14px;
+  min-width: auto;
+}
+.mainhomewrapper {
 
-  .box {
-    background-position: center;
-    padding: 0;
-    width: 1500px;
-  }
-  .box_1 {
-    background-position: center;
-    padding: 0;
-    width: 1500px;
-  }
 
+}
+
+.slideshow img {
+  width: 100%;
+  height: 350px;
+}
 
 /* 地図 */
 .wrapper {
   flex-direction: column;
+
 }  
 .location-map {
-    width: 1000px;
-    height: 500px;
+    width: 100%;
+    height: 250px;
     text-align: center;
     padding: 20px 10px;
   
   }
   .location-info {
-    width: 1000px;
+    width: 100%;
   }
   .location-info h3 {
-    font-size: 3.0rem;
+    font-size: 2rem;
   }
   .location-info p {
     font-size: 1.0rem;
   }
-
 /* フッター */
   footer {
-    width: 1500px;
-    padding: 4rem;
+    padding: 0.25rem;
   }
 
 
