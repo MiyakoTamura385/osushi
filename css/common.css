@@ -7,7 +7,8 @@ html {
 }
 body {
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-  background-color: #000000;
+  background-color: rgba(0,0,0,.85);
+  color: #fff;
 }
 
 /* HEADER
@@ -26,7 +27,11 @@ body {
 #head_line a {
   font-size: 27px;
 }
-
+@media (max-width: 600px) {
+ #head_line_contact {
+   display: none;
+ }
+}
 /* nav
 ----------------------------------------------*/
 .main-nav  {
@@ -70,6 +75,16 @@ body {
   position: absolute;
   object-fit: cover;
 }
+@media (max-width: 600px) {  
+  .slideshow  {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .slideshow img {
+    width: 100%;
+    height: 350px;
+  }
+}
 
 /* こだわり部分 */
 #main_homewrapper {
@@ -97,8 +112,8 @@ h1#mainwrapper {
 
 #main_homewrapper p {
   position: absolute;
-  width: 100%;
-  left: 0; 
+  width: 85%;
+  margin-left: 85px; 
   top: calc(35% - 25px); 
   text-align: center; 
   color: #fff;
@@ -107,12 +122,24 @@ h1#mainwrapper {
   line-height: 50px;
   line-height: 2.5rem;
 }
+
+
 @media (max-width: 600px) {
+  div.main_homewrapper {
+    width: 100%;
+    padding-top: 20px;
+  }
   h1#mainwrapper {
   width: 170px;
   height: 60px;
   line-height: 60px;
   font-size: 2rem;
+  }
+  #main_homewrapper p {
+    font-size: 15px;
+    top: calc(15% - 20px);
+    padding: 15px;
+    line-height: 1.75rem;
   }
 }
 /* お知らせ部分 */
@@ -125,7 +152,7 @@ h1#mainwrapper {
 div.infomation {
   width: 100%;
   height: 480px;
-  padding-top: 100px;
+  padding-top: 45px;
   margin-bottom: 24px;
   position: relative;
 }
@@ -137,20 +164,34 @@ h1#infotext {
   text-align: center;
   font-size: 34px;
   color: #595757;
-  background-color: rgba(255,255,255,.6);
+  background-color: rgba(19, 1, 1, 0.157);
 }
 #main_infomation p {
-  position: absolute;
+  
   width: 100%;
-  left: 0; 
-  top: calc(50% - 25px); 
+  left: 0;    
   text-align: center; 
   color: #000000;
   font-weight: bold; 
   font-size: 17px;
   line-height: 50px;
   line-height: 2.5rem;
+  padding-top: 30px;
 }
+div.infomation .info {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(12, 12, 12, 0.116);
+  text-align: center;
+  display: block;
+  margin: 40px auto;
+  border: 1px solid rgba(252, 244, 244, 0.185);
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none; 
+}
+
 @media (max-width: 600px) {
   #main_infomation {
     display: none;
@@ -220,6 +261,12 @@ iframe {
   color: #fff;
 }
 
+@media (max-width: 600px) {
+  #content {
+    display: none;
+  }
+}
+
 /* 一番下のメニューバー */
 .botomm-nav  {
   display: flex;
@@ -237,7 +284,7 @@ iframe {
 }
 .botomm-nav a:hover {
   color: #b0941e;
-  text-decoration: none;
+  text-decoratirgba(0,0,0,.85)on: none;
 }
 
 /* フッター
@@ -257,7 +304,7 @@ footer p {
 -----------------------------------*/
 /* ヘッダーにボタン配置 */
 #menu {
-  background-color: #000000;
+  background-color: rgba(0,0,0,.85);
 }
 
 .container {
@@ -591,20 +638,10 @@ body {
   font-size: 14px;
   min-width: auto;
 }
-.mainhomewrapper {
-
-
-}
-
-.slideshow img {
-  width: 100%;
-  height: 350px;
-}
 
 /* 地図 */
 .wrapper {
   flex-direction: column;
-
 }  
 .location-map {
     width: 100%;
