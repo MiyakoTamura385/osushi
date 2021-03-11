@@ -7,7 +7,7 @@
 
 @import "node_modules/slick-carousel/slick/slick.scss";
 
-@import "node_modules/ress";
+// @import "node_modules/ress/dist/ress.min.css";
 
 @import "mixins";
 @import "global";
@@ -102,17 +102,18 @@ body {
 
 /* こだわり部分 */
 #main_homewrapper {
-  background-image: url("/img/uni1.jpg");
+  background-image: url("../../img/uni1.jpg");
   background-size: cover;
   object-fit: cover;
+}
+div.main_homewrapper {
   width: 100%;
   height: 780px;
   padding-top: 100px;
   margin-bottom: 24px;
   position: relative;
 }
-#mainwrapper {
-  h1 {
+h1#mainwrapper {
     width: 376px;
     height: 80px;
     line-height: 80px;
@@ -121,20 +122,21 @@ body {
     font-size: 34px;
     color: #595757;
     background-color: rgba(255,255,255,.6);
-  }
-  p {
-    position: absolute;
-    width: 85%;
-    margin-left: 85px;
-    top: calc(35% - 25px);
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 50px;
-    line-height: 2.5rem;
-  }
 }
+
+#main_homewrapper p {
+      position: absolute;
+      width: 85%;
+      margin-left: 85px;
+      top: calc(35% - 25px);
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 50px;
+      line-height: 2.5rem;
+    }
+
 
 @media (max-width: 600px) {
   div.main_homewrapper {
@@ -142,10 +144,10 @@ body {
     padding-top: 20px;
   }
   h1#mainwrapper {
-  width: 170px;
-  height: 60px;
-  line-height: 60px;
-  font-size: 2rem;
+      width: 170px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 2rem;
   }
   #main_homewrapper p {
     font-size: 15px;
@@ -156,7 +158,7 @@ body {
 }
 /* お知らせ部分 */
 #main_infomation {
-  background-image: url("/img/haikei.jpg");
+  background-image: url("../../img/haikei.jpg");
   background-size: cover;
   margin-top: 3rem;
   object-fit: cover;
@@ -296,7 +298,7 @@ iframe {
 }
 .botomm-nav a:hover {
   color: #b0941e;
-  text-decoratirgba(0,0,0,.85)on: none;
+  text-decoration: none;
 }
 
 /* フッター
@@ -409,7 +411,7 @@ header .container {
 /* 見出しの部分
 ----------------------------------*/
 #menu_homewrapper {
-  background-image: url("/img/menu1600toro.jpg");
+  background-image: url("../../img/menu1600toro.jpg");
   background-size: cover;
   object-fit: cover;
 }
@@ -484,7 +486,7 @@ h1#menuwrapper {
 /* kodawari html
 --------------------------------*/
 #kodawari_homewrapper {
-  background-image: url("/img/kodawari1600syokunin.jpg");
+  background-image: url("../../img/kodawari1600syokunin.jpg");
   background-size: cover;
   object-fit: cover;
 }
@@ -546,7 +548,7 @@ h1#menuwrapper {
 /* contact.html
 ---------------------------------------*/
 #contact_homewrapper {
-  background-image: url("/img/contact1600hashi.jpg");
+  background-image: url("../../img/contact1600hashi.jpg");
   background-size: cover;
   object-fit: cover;
 }

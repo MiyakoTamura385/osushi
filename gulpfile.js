@@ -33,7 +33,7 @@ function concatJs() {
 
 // CSS tasks
 function compileSass() {
-	return gulp.src('./css/scss/main.s?css')
+	return gulp.src('./css/scss/main.scss')
 		.pipe(maps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer())
