@@ -45,7 +45,7 @@ header {
  }
 }
 /* 
-v
+
 ----------------------------------------------*/
 
 /* ハンバーガーアイコン */
@@ -168,7 +168,6 @@ v
 .slideshow {
   max-width: 1600px;
   height: 480px;
-  min-width: 960px;
   overflow: hidden;
   position: relative; 
   margin-bottom: 3rem;
@@ -182,12 +181,12 @@ v
 }
 @media (max-width: 480px) {  
   .slideshow  {
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 800px;
+    height: 300px;
+    margin-bottom: 10px;
   }
   .slideshow img {
-    width: 480px;
-    height: 200px;
+    width: 100%;
   }
 }
 
@@ -199,10 +198,9 @@ v
 }
 div.main_homewrapper {
   width: 100%;
-  height: 580px;
-  padding-top: 100px;
+  height: 580px;  
+  padding-top: 45px;
   margin-bottom: 24px;
-  position: relative;
 }
 h1#mainwrapper {
   width: 376px;
@@ -215,10 +213,10 @@ h1#mainwrapper {
   background-color: rgba(255,255,255,.6);
 }
 
-#main_homewrapper p {
-  position: absolute;
+#main_homewrapper .pc-only {  
   width: 85%;
-  margin-left: 85px; 
+  margin: auto; 
+  margin-top: 20px;
   top: calc(35% - 25px); 
   text-align: center; 
   color: #fff;
@@ -227,11 +225,17 @@ h1#mainwrapper {
   line-height: 50px;
   line-height: 2.5rem;
 }
+#main_homewrapper .sp-only {
+  display: none;
+}
 
-
-@media (max-width: 480px) {
+@media (max-width: 480px) { 
+  #main_homewrapper {
+    width: 100%;
+  }
   div.main_homewrapper {
     width: 100%;
+    height: 300px;
     padding-top: 20px;
   }
   h1#mainwrapper {
@@ -240,13 +244,17 @@ h1#mainwrapper {
   line-height: 60px;
   font-size: 2rem;
   }
-  #main_homewrapper p {
-    font-size: 15px;
-    top: calc(15% - 20px);
-    padding: 15px;
-    line-height: 1.75rem;
+  #main_homewrapper .pc-only {
+    display: none;
+    margin: auto;
   }
+  .sp-only {
+    text-align: center;
+    color: #fff;
+  } 
+  
 }
+
 /* お知らせ部分 */
 #main_infomation {
   background-image: url("../img/haikei.jpg");
@@ -259,7 +267,6 @@ div.infomation {
   height: 480px;
   padding-top: 45px;
   margin-bottom: 24px;
-  position: relative;
 }
 h1#infotext {
   width: 376px;
@@ -271,17 +278,14 @@ h1#infotext {
   color: #595757;
   background-color: rgba(12, 12, 12, 0.116);
 }
-#main_infomation p {
-  
-  width: 100%;
-  left: 0;    
+#main_infomation p {      
   text-align: center; 
   color: #000000;
   font-weight: bold; 
   font-size: 17px;
   line-height: 50px;
   line-height: 2.5rem;
-  padding-top: 30px;
+  margin-top: 20px;
 }
 div.infomation .info {
   width: 250px;
@@ -344,23 +348,22 @@ div.infomation .info {
     flex-direction: column;
   }  
   .location-map {
-    width: 50%;
+    width: 100%;
     height: 250px;
-    text-align: center;
-    padding: 20px 10px;
-  
+    margin: auto;  
   }
   .location-info {
     width: 100%;
+    margin: auto;
   }
   .location-info h3 {
-    font-size: 1.65rem;
-  }
-  .location-info p {
-    font-size: 1.0rem;
-    line-height: 0.025rem;
+    font-size: 1.3rem;
   }
 }
+
+@media screen and (min-width: 768px){
+  .br-sp {display: none; }
+  }
 
 /* iframe */
 iframe {
@@ -432,6 +435,12 @@ footer {
 footer p {
   color: #000000;
   font-size: 0.875rem;
+}
+
+@media (max-width: 480px) {
+  footer {
+    width: 100%;
+  }
 }
 
 
@@ -633,8 +642,8 @@ div.homewrapper {
   }
   .wrapperbox_menu h2 {
     font-size: 1.15rem;
-    margin-top: 0px;
-    padding-bottom: 15px;
+    margin-top: 30px;
+    padding-bottom: 0px;
   }
   .wrapperbox_menu li { 
     font-size: 1rem;
@@ -644,6 +653,9 @@ div.homewrapper {
   }
   .wrapperbox_2 li {
     font-size: 1.1rem;
+  }
+  .drink {
+    margin-top: 20px;
   }
 }
 
@@ -681,23 +693,10 @@ div.homewrapper {
 .flexpolicy p img {
   width: 80%;
 }
-
-.flexpolicy_1 {
-  display: flex;
-  justify-content: space-around;
+/* 奇数の行に対して指定 */
+.flexpolicy:nth-child(odd) {
   flex-direction: row-reverse;
-  margin-top: 20px;
-}
-.flexpolicy_1  p{
-  width: 43%;
-  color: #fff;
-  margin: 10px;
-  padding: 10px;
-  font-size: 17px;
-}
-.flexpolicy_1 p img {
-  width: 80%;
-}
+} 
 
 @media (max-width: 480px) {
   #kodawari_homewrapper {
@@ -722,8 +721,8 @@ div.homewrapper {
   }
   .wrapperbox_menu h2 {
     font-size: 1.15rem;
-    margin-top: 0px;
-    padding-bottom: 15px;
+    margin-top: 30px;
+    padding-bottom: 0px;
         
   }
   .wrapperbox_menu li { 
