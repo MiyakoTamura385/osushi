@@ -24,11 +24,11 @@ body {
   background-color: rgba(0,0,0,.85);
   color: #fff;
   margin: 0;
+  overflow: scroll ;
 }
 @media (max-width: 480px) {
   body, html {
     width: 100%;
-    min-width: auto;
     max-width: 100%;
   }
 }
@@ -182,26 +182,33 @@ v
 .slideshow {
   max-width: 1600px;
   height: 480px;
-  min-width: 960px;
+  min-width: 480px;
   overflow: hidden;
   position: relative;
   margin-bottom: 3rem;
-}
-.slideshow img {
-  display: none;
-  left: 63.5%;
-  margin-left: -800px;
-  position: absolute;
-  object-fit: cover;
-}
-@media (max-width: 480px) {
-  .slideshow  {
+  img {
+    display: none;
+    left: 63.5%;
+    // margin-left: -800px;
+    // position: absolute;
+    object-fit: cover;
+    width: 100%;
+  }
+  @media screen and (max-width: 480px) {
+    min-width: auto;
     margin-top: 0;
     margin-bottom: 0;
+    height: 240px;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
-  .slideshow img {
-    width: 480px;
-    height: 200px;
+  @media screen and (min-width: 480px) and (max-width: 960px) {
+    height: 360px;
+  }
+  @media screen and (min-width: 960px) {
+    height: 480px;
   }
 }
 
@@ -210,57 +217,51 @@ v
   background-image: url("../img/1600uni.jpg");
   max-width: 1600px;
   object-fit: cover;
-}
-div.main_homewrapper {
   width: 100%;
-  height: 580px;
-  padding-top: 100px;
   margin-bottom: 24px;
   position: relative;
-}
-h1#mainwrapper {
+  padding: 15px 0px 15px;
+
+  h1 {
     width: 376px;
     height: 80px;
     line-height: 80px;
-    margin: 0 auto;
+    margin: 48px auto 48px;
     text-align: center;
     font-size: 34px;
     color: #595757;
     background-color: rgba(255,255,255,.6);
-}
-
-#main_homewrapper p {
-      position: absolute;
+  }
+  p {
+      // position: absolute;
       width: 85%;
-      margin-left: 85px;
-      top: calc(35% - 25px);
-      text-align: center;
+      // margin-left: 85px;
+      margin: auto;
+      // top: calc(35% - 25px);
+      text-align: left;
       color: #fff;
       font-weight: bold;
-      font-size: 17px;
-      line-height: 50px;
+      font-size: 1.4rem;
       line-height: 2.5rem;
-    }
-
-
-@media (max-width: 480px) {
-  div.main_homewrapper {
+  }
+  @media (max-width: 480px) {
     width: 100%;
     padding-top: 20px;
-  }
-  h1#mainwrapper {
+    h1 {
       width: 170px;
       height: 60px;
       line-height: 60px;
       font-size: 2rem;
-  }
-  #main_homewrapper p {
-    font-size: 15px;
-    top: calc(15% - 20px);
-    padding: 15px;
-    line-height: 1.75rem;
+    }
+    p {
+      font-size: 15px;
+      top: calc(15% - 20px);
+      padding: 15px;
+      line-height: 1.75rem;
+    }
   }
 }
+
 /* お知らせ部分 */
 #main_infomation {
   background-image: url("../../img/haikei.jpg");
@@ -323,31 +324,31 @@ div.infomation .info {
 #location {
   padding: 4% 5%;
   margin-top: 37px;
-}
-#location .wrapper {
-  display: flex;
-  justify-content: space-between;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .location-info {
   width: 22%;
   color: #eddcbc;
-}
-.location-info h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.25rem;
-}
-
-.location-info dl {
-  padding: 12px 10px;
-  white-space: nowrap;
-  font-size: 1rem;
-}
-.location-info dt {
-  color: #b0941e;
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+  }
+  dl {
+    padding: 12px 10px;
+    white-space: nowrap;
+    font-size: 1rem;
+    // word-wrap: break-word;
+    dt {
+      color: #b0941e;
+    }
+  }
 }
 
 .location-map {
-  width: 55%;
+  width: 70%;
   padding-top: 50px;
   margin-top: -50px;
 }
