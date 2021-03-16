@@ -7251,6 +7251,9 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+<<<<<<< HEAD
+/* 共通部分
+=======
 /* Slider */
 .slick-loading .slick-list {
   background: #fff url("./ajax-loader.gif") center center no-repeat; }
@@ -7449,13 +7452,19 @@ a.text-dark:hover, a.text-dark:focus {
   display: none; }
 
 /* 共通部分
+>>>>>>> cecc2a37b98e2ac512594218aaa26e13f1859360
 -------------------------------------*/
 html {
   font-size: 100%; }
 
 body {
+<<<<<<< HEAD
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  background-color: #eddcbc; }
+=======
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
   background-color: rgba(0, 0, 0, 0.85);
+<<<<<<< HEAD
   color: #fff;
   margin: 0;
   overflow: scroll; }
@@ -7464,6 +7473,10 @@ body {
   body, html {
     width: 100%;
     max-width: 100%; } }
+=======
+  color: #fff; }
+>>>>>>> cecc2a37b98e2ac512594218aaa26e13f1859360
+>>>>>>> feature/gulp
 
 /* HEADER
 --------------------------------------------*/
@@ -7488,8 +7501,12 @@ header {
   #head_line_contact {
     display: none; } }
 
+<<<<<<< HEAD
 /*
 v
+=======
+/* nav
+>>>>>>> feature/gulp
 ----------------------------------------------*/
 /* ハンバーガーアイコン */
 .btn-burger {
@@ -7593,7 +7610,27 @@ v
     color: #b0941e;
     text-decoration: none; } }
 
+<<<<<<< HEAD
+/* スライダー
+-----------------------*/
+.slider img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 100vh;
+  width: auto\9;
+  /* ie8 */
+  margin: 0 auto; }
+
+.slider {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 0 48px;
+  outline: none; }
+
 /* ホーム
+=======
+/* ホーム
+>>>>>>> cecc2a37b98e2ac512594218aaa26e13f1859360
 -----------------------------*/
 /* スライドショー　*/
 .slideshow {
@@ -7692,9 +7729,16 @@ h1#infotext {
   color: #595757;
   background-color: rgba(12, 12, 12, 0.116); }
 
+<<<<<<< HEAD
+/* フッター
+---------------------*/
+footer {
+  background-color: #000000;
+=======
 #main_infomation p {
   width: 100%;
   left: 0;
+>>>>>>> cecc2a37b98e2ac512594218aaa26e13f1859360
   text-align: center;
   color: #000000;
   font-weight: bold;
@@ -7786,7 +7830,14 @@ iframe {
   background-color: #333;
   color: #fff; }
 
+<<<<<<< HEAD
 @media (max-width: 480px) {
+=======
+<<<<<<< HEAD
+/* モバイル版
+=======
+@media (max-width: 600px) {
+>>>>>>> feature/gulp
   #content {
     display: none; } }
 
@@ -8184,6 +8235,7 @@ input[type="submit"] {
     font-size: 1.2rem; } }
 
 /* モバイル版
+>>>>>>> cecc2a37b98e2ac512594218aaa26e13f1859360
 ---------------------------------------*/
 @media (max-width: 480px) {
   /*画面サイズが480px以下の場合ここの記述が適用される　*/
