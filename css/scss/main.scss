@@ -21,7 +21,7 @@ html {
 }
 body {
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-  background-color: rgba(0,0,0,.85);
+  background-color: rgba(0, 0, 0, .85);
   color: #fff;
   margin: 0;
 }
@@ -73,7 +73,7 @@ header {
 .icon, .icon:before, .icon:after {
   position: absolute;
   top: 0;
-  right: 0;  
+  right: 0;
   bottom: 0;
   height: 2px; /*線の太さ*/
   width: 35px; /*線の長さ*/
@@ -83,7 +83,7 @@ header {
   content: '';
   cursor: pointer;
   margin: auto;
-  
+
 }
 /*三本線の間隔*/
 .icon:before {
@@ -94,47 +94,46 @@ header {
 }
 /*チェックボックス非表示*/
 .nav-toggle {
-    display: none;
+  display: none;
 }
 /*アイコンをクリックしたら*/
 .nav-toggle:checked ~ .btn-burger .icon {
-    background: transparent;
+  background: transparent;
 }
 .nav-toggle:checked ~ .btn-burger .icon:before {
-    transform: rotate(-45deg);
-    top: 0;
+  transform: rotate(-45deg);
+  top: 0;
 }
 .nav-toggle:checked ~ .btn-burger .icon:after {
-    transform: rotate(45deg);
-    top: 0;
+  transform: rotate(45deg);
+  top: 0;
 }
 .icon,
 .icon:before,
 .icon:after {
-    transition: all .8s;
+  transition: all .8s;
 }
 /*表示されるメニューの中身*/
 .nav {
-    background-color: rgba(0,0,0,.85);
-
+  background-color: rgba(0, 0, 0, .85);
 }
 .main-nav a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
+  display: block;
+  text-decoration: none;
+  color: #fff;
 }
 .main-nav {
-    list-style: none;
-    display: none;
-    margin: 0;
-    padding-left: 20px;
+  list-style: none;
+  display: none;
+  margin: 0;
+  padding-left: 20px;
 }
 .main-nav li {
-    margin: 0;
-    padding: 10px;
+  margin: 0;
+  padding: 10px;
 }
 .nav-toggle:checked ~ .nav .main-nav {
-    display: block;
+  display: block;
 }
 /* --------------------------------------------------
   幅768px以上のスタイル指定 ここから
@@ -142,7 +141,7 @@ header {
 @media screen and (min-width: 768px) {
   /* ハンバーガーボタン */
   .btn-burger {
-      display: none;  /*768px以上では使用しない */
+    display: none; /*768px以上では使用しない */
   }
   .nav-toggle:checked ~ .nav .main-nav {
     display: none;
@@ -150,15 +149,12 @@ header {
   .main-nav li:not(:last-child) {
     border-right: 1px solid #fff;
   }
-
-  .main-nav  {
+  .main-nav {
     display: flex;
     font-size: 1.25rem;
     text-transform: uppercase;
-
     list-style: none;
     justify-content: center;
-
   }
   .main-nav li {
     margin-left: 36px;
@@ -176,7 +172,7 @@ header {
 /* ホーム
 -----------------------------*/
 /* スライドショー　*/
-.slideshow {  
+.slideshow {
   height: 480px;
   overflow: hidden;
   position: relative;
@@ -205,14 +201,11 @@ header {
   background-image: url("../img/1600uni.jpg");
   max-width: 1600px;
   object-fit: cover;
-}
-div.main_homewrapper {
   width: 100%;
-  height: 580px;  
+  height: 580px;
   padding-top: 45px;
   margin-bottom: 24px;
-}
-h1#mainwrapper {
+  h1 {
     width: 376px;
     height: 80px;
     line-height: 80px;
@@ -220,22 +213,23 @@ h1#mainwrapper {
     text-align: center;
     font-size: 34px;
     color: #595757;
-    background-color: rgba(255,255,255,.6);
+    background-color: rgba(255, 255, 255, .6);
+  }
 }
-#main_homewrapper .pc-only {  
+#main_homewrapper .pc-only {
   width: 85%;
-  margin: auto; 
+  margin: auto;
   margin-top: 20px;
-  top: calc(35% - 25px); 
-  text-align: center; 
+  top: calc(35% - 25px);
+  text-align: center;
   color: #fff;
-  font-weight: bold; 
+  font-weight: bold;
   font-size: 17px;
   line-height: 50px;
   line-height: 2.5rem;
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
   #main_homewrapper {
     width: 100%;
   }
@@ -243,12 +237,19 @@ h1#mainwrapper {
     width: 100%;
     height: 300px;
     padding-top: 20px;
-  }
-  h1#mainwrapper {
+
+    h1 {
       width: 170px;
       height: 60px;
       line-height: 60px;
       font-size: 2rem;
+    }
+    p {
+      font-size: 15px;
+      top: calc(15% - 20px);
+      padding: 15px;
+      line-height: 1.75rem;
+    }
   }
   #main_homewrapper .pc-only {
     display: none;
@@ -259,7 +260,7 @@ h1#mainwrapper {
     color: #fff;
     margin: 20px;
     font-size: 1rem;
-  }   
+  }
 }
 
 /* お知らせ部分 */
@@ -285,7 +286,7 @@ h1#infotext {
   color: #595757;
   background-color: rgba(12, 12, 12, 0.116);
 }
-#main_infomation p {      
+#main_infomation p {
   text-align: center;
   width: 100%;
   left: 0;
@@ -322,27 +323,30 @@ div.infomation .info {
 #location {
   padding: 4% 5%;
   margin-top: 37px;
-}
-#location .wrapper {
-  display: flex;
-  justify-content: space-between;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .location-info {
   width: 22%;
   color: #eddcbc;
-}
-.location-info h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.25rem;
-}
 
-.location-info dl {
-  padding: 12px 10px;
-  white-space: nowrap;
-  font-size: 1rem;
-}
-.location-info dt {
-  color: #b0941e;
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+  }
+
+  dl {
+    padding: 12px 10px;
+    white-space: nowrap;
+    font-size: 1rem;
+
+    // word-wrap: break-word;
+    dt {
+      color: #b0941e;
+    }
+  }
 }
 
 .location-map {
@@ -384,7 +388,7 @@ iframe {
 
 /* 戻るボタン
 --------------------------------------*/
-#content{
+#content {
   position: relative;
 }
 
@@ -409,7 +413,7 @@ iframe {
 }
 
 /* 一番下のメニューバー */
-.botomm-nav  {
+.botomm-nav {
   display: flex;
   font-size: 1.25rem;
   text-transform: uppercase;
@@ -458,7 +462,7 @@ footer p {
 -----------------------------------*/
 /* ヘッダーにボタン配置 */
 #menu {
-  background-color: rgba(0,0,0,.85);
+  background-color: rgba(0, 0, 0, .85);
 }
 .container {
   max-width: 100%;
@@ -568,7 +572,7 @@ div.homewrapper {
   text-align: center;
   font-size: 34px;
   color: #595757;
-  background-color: rgba(255,255,255,.6);
+  background-color: rgba(255, 255, 255, .6);
 }
 
 @media (max-width: 480px) {
@@ -625,7 +629,7 @@ div.homewrapper {
   flex-direction: row;
   margin-top: 20px;
 }
-.flex  p {
+.flex p {
   width: 43%;
   color: #fff;
   margin: 10px;
@@ -680,7 +684,7 @@ div.homewrapper {
   position: fixed;
   bottom: 10px;
   right: 10px;
-   
+
   /*-----装飾-----*/
   width: 64px;
   height: 64px;
@@ -706,7 +710,7 @@ div.homewrapper {
   text-align: center;
   font-size: 34px;
   color: #595757;
-  background-color: rgba(255,255,255,.6);
+  background-color: rgba(255, 255, 255, .6);
 }
 /*----- 横並び ---------*/
 .flexpolicy {
@@ -715,7 +719,7 @@ div.homewrapper {
   flex-direction: row;
   margin-top: 20px;
 }
-.flexpolicy  p{
+.flexpolicy p {
   width: 43%;
   color: #fff;
   margin: 10px;
@@ -728,7 +732,7 @@ div.homewrapper {
 /* 奇数の行に対して指定 */
 .flexpolicy:nth-child(odd) {
   flex-direction: row-reverse;
-} 
+}
 
 @media (max-width: 480px) {
   #kodawari_homewrapper {
@@ -777,7 +781,7 @@ div.homewrapper {
   text-align: center;
   font-size: 34px;
   color: #595757;
-  background-color: rgba(255,255,255,.6);
+  background-color: rgba(255, 255, 255, .6);
 }
 #contact {
   background-color: rgba(61, 60, 60, 0);
@@ -884,19 +888,22 @@ input[type="submit"] {
     flex-wrap: wrap;
     font-size: 15px;
   }
-  .main-nav  { display: none}
-  .botomm-nav {display: none}
-
+  .main-nav {
+    display: none
+  }
+  .botomm-nav {
+    display: none
+  }
   /* ホーム部分 */
   body {
     line-height: 28px;
-    font-size: 14px;    
+    font-size: 14px;
   }
 }
   /* パソコンで見たときは"pc"のclassがついた画像が表示される */
 .pc-only { display: block !important; }
 .sp-only { display: none !important; }
- 
+
   /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
 @media only screen and (max-width: 480px) {
     .pc-only { display: none !important; }

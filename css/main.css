@@ -7488,9 +7488,6 @@ header {
   #head_line_contact {
     display: none; } }
 
-/*
-v
-----------------------------------------------*/
 /* ハンバーガーアイコン */
 .btn-burger {
   cursor: pointer;
@@ -7506,7 +7503,6 @@ v
   position: absolute;
   top: 0;
   right: 0;
-  left: 0;
   bottom: 0;
   height: 2px;
   /*線の太さ*/
@@ -7597,7 +7593,6 @@ v
 -----------------------------*/
 /* スライドショー　*/
 .slideshow {
-  max-width: 1600px;
   height: 480px;
   overflow: hidden;
   position: relative;
@@ -7613,11 +7608,11 @@ v
 
 @media (max-width: 480px) {
   .slideshow {
-    margin-top: 0;
-    margin-bottom: 0; }
+    width: 720px;
+    height: 300px;
+    margin-bottom: 10px; }
   .slideshow img {
-    width: 480px;
-    height: 200px; } }
+    width: auto; } }
 
 /* こだわり部分 */
 #main_homewrapper {
@@ -7629,9 +7624,8 @@ v
 div.main_homewrapper {
   width: 100%;
   height: 580px;
-  padding-top: 100px;
-  margin-bottom: 24px;
-  position: relative; }
+  padding-top: 45px;
+  margin-bottom: 24px; }
 
 h1#mainwrapper {
   width: 376px;
@@ -7643,10 +7637,10 @@ h1#mainwrapper {
   color: #595757;
   background-color: rgba(255, 255, 255, 0.6); }
 
-#main_homewrapper p {
-  position: absolute;
+#main_homewrapper .pc-only {
   width: 85%;
-  margin-left: 85px;
+  margin: auto;
+  margin-top: 20px;
   top: calc(35% - 25px);
   text-align: center;
   color: #fff;
@@ -7656,19 +7650,25 @@ h1#mainwrapper {
   line-height: 2.5rem; }
 
 @media (max-width: 480px) {
+  #main_homewrapper {
+    width: 100%; }
   div.main_homewrapper {
     width: 100%;
+    height: 300px;
     padding-top: 20px; }
   h1#mainwrapper {
     width: 170px;
     height: 60px;
     line-height: 60px;
     font-size: 2rem; }
-  #main_homewrapper p {
-    font-size: 15px;
-    top: calc(15% - 20px);
-    padding: 15px;
-    line-height: 1.75rem; } }
+  #main_homewrapper .pc-only {
+    display: none;
+    margin: auto; }
+  .sp-only {
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+    font-size: 1rem; } }
 
 /* お知らせ部分 */
 #main_infomation {
@@ -7682,8 +7682,7 @@ div.infomation {
   width: 100%;
   height: 480px;
   padding-top: 45px;
-  margin-bottom: 24px;
-  position: relative; }
+  margin-bottom: 24px; }
 
 h1#infotext {
   width: 376px;
@@ -7696,15 +7695,15 @@ h1#infotext {
   background-color: rgba(12, 12, 12, 0.116); }
 
 #main_infomation p {
+  text-align: center;
   width: 100%;
   left: 0;
-  text-align: center;
   color: #000000;
   font-weight: bold;
   font-size: 17px;
   line-height: 50px;
   line-height: 2.5rem;
-  padding-top: 30px; }
+  margin-top: 20px; }
 
 div.infomation .info {
   width: 250px;
@@ -7759,17 +7758,19 @@ div.infomation .info {
   .wrapper {
     flex-direction: column; }
   .location-map {
-    width: 50%;
+    width: 100%;
     height: 250px;
     text-align: center;
     padding: 20px 10px; }
   .location-info {
-    width: 100%; }
+    width: 100%;
+    margin: auto; }
   .location-info h3 {
-    font-size: 1.65rem; }
-  .location-info p {
-    font-size: 1.0rem;
-    line-height: 0.025rem; } }
+    font-size: 1.3rem; } }
+
+@media screen and (min-width: 768px) {
+  .br-sp {
+    display: none; } }
 
 /* iframe */
 iframe {
@@ -7831,6 +7832,10 @@ footer {
 footer p {
   color: #000000;
   font-size: 0.875rem; }
+
+@media (max-width: 480px) {
+  footer {
+    width: 100%; } }
 
 /*------ MENU html
 -----------------------------------*/
@@ -8010,14 +8015,33 @@ div.homewrapper {
     width: 100%; }
   .wrapperbox_menu h2 {
     font-size: 1.15rem;
-    margin-top: 0px;
-    padding-bottom: 15px; }
+    margin-top: 30px;
+    padding-bottom: 0px; }
   .wrapperbox_menu li {
     font-size: 1rem; }
   .wrapperbox_2 h2 {
     font-size: 1.2rem; }
   .wrapperbox_2 li {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .drink {
+    margin-top: 20px; } }
+
+/* 戻るボタン
+--------------------------------------*/
+@media (max-width: 480px) {
+  #content {
+    position: relative; }
+  #topBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    /*-----装飾-----*/
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    background-color: #333;
+    color: #fff; } }
 
 /* kodawari html
 --------------------------------*/
@@ -8054,21 +8078,9 @@ div.homewrapper {
 .flexpolicy p img {
   width: 80%; }
 
-.flexpolicy_1 {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row-reverse;
-  margin-top: 20px; }
-
-.flexpolicy_1 p {
-  width: 43%;
-  color: #fff;
-  margin: 10px;
-  padding: 10px;
-  font-size: 17px; }
-
-.flexpolicy_1 p img {
-  width: 80%; }
+/* 奇数の行に対して指定 */
+.flexpolicy:nth-child(odd) {
+  flex-direction: row-reverse; }
 
 @media (max-width: 480px) {
   #kodawari_homewrapper {
@@ -8087,7 +8099,8 @@ div.homewrapper {
     width: 100%; }
   .wrapperbox_menu h2 {
     font-size: 1.15rem;
-    margin-top: 0px;
+    margin-top: 30px;
+    padding-bottom: 0px;
     padding-bottom: 15px; }
   .wrapperbox_menu li {
     font-size: 1rem; } }
@@ -8186,9 +8199,14 @@ input[type="submit"] {
     font-size: 1.25rem; }
   #contact p {
     font-size: 1rem;
-    padding: 15px; }
+    padding: 20px; }
   .page-title {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  /* 送信フォーム */
+  textarea {
+    width: 80%;
+    max-width: 480px;
+    height: 6rem; } }
 
 /* モバイル版
 ---------------------------------------*/
@@ -8208,5 +8226,19 @@ input[type="submit"] {
   body {
     line-height: 28px;
     font-size: 14px; } }
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc-only {
+  display: block !important; }
+
+.sp-only {
+  display: none !important; }
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 480px) {
+  .pc-only {
+    display: none !important; }
+  .sp-only {
+    display: block !important; } }
 
 /*# sourceMappingURL=main.css.map */
