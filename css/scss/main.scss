@@ -58,18 +58,6 @@ header {
    display: none;
  }
 }
-<<<<<<< HEAD:css/common.css
-<<<<<<< Updated upstream:css/common.css
-/* 
-
-=======
-/*
->>>>>>> Stashed changes:css/scss/main.scss
-=======
-/*
-v
->>>>>>> feature/gulp:css/scss/main.scss
-----------------------------------------------*/
 
 /* ハンバーガーアイコン */
 .btn-burger {
@@ -234,8 +222,6 @@ h1#mainwrapper {
     color: #595757;
     background-color: rgba(255,255,255,.6);
 }
-
-<<<<<<< HEAD:css/common.css
 #main_homewrapper .pc-only {  
   width: 85%;
   margin: auto; 
@@ -248,20 +234,6 @@ h1#mainwrapper {
   line-height: 50px;
   line-height: 2.5rem;
 }
-=======
-#main_homewrapper p {
-      position: absolute;
-      width: 85%;
-      margin-left: 85px;
-      top: calc(35% - 25px);
-      text-align: center;
-      color: #fff;
-      font-weight: bold;
-      font-size: 17px;
-      line-height: 50px;
-      line-height: 2.5rem;
-    }
->>>>>>> feature/gulp:css/scss/main.scss
 
 @media (max-width: 480px) { 
   #main_homewrapper {
@@ -313,16 +285,10 @@ h1#infotext {
   color: #595757;
   background-color: rgba(12, 12, 12, 0.116);
 }
-<<<<<<< HEAD:css/common.css
 #main_infomation p {      
-  text-align: center; 
-=======
-#main_infomation p {
-
+  text-align: center;
   width: 100%;
   left: 0;
-  text-align: center;
->>>>>>> feature/gulp:css/scss/main.scss
   color: #000000;
   font-weight: bold;
   font-size: 17px;
@@ -393,13 +359,8 @@ div.infomation .info {
   .location-map {
     width: 100%;
     height: 250px;
-<<<<<<< HEAD:css/common.css
-    margin: auto;  
-=======
     text-align: center;
     padding: 20px 10px;
-
->>>>>>> feature/gulp:css/scss/main.scss
   }
   .location-info {
     width: 100%;
@@ -793,15 +754,9 @@ div.homewrapper {
   }
   .wrapperbox_menu h2 {
     font-size: 1.15rem;
-<<<<<<< HEAD:css/common.css
     margin-top: 30px;
     padding-bottom: 0px;
-        
-=======
-    margin-top: 0px;
     padding-bottom: 15px;
-
->>>>>>> feature/gulp:css/scss/main.scss
   }
   .wrapperbox_menu li {
     font-size: 1rem;
@@ -903,37 +858,28 @@ input[type="submit"] {
     height: 60px;
     line-height: 60px;
     font-size: 1.25rem;
-    }
-    #contact p {
-      font-size: 1rem;
-      padding: 20px;
-    }
-    .page-title {
-      font-size: 1.2rem;
-    }
-<<<<<<< HEAD:css/common.css
-    /* 送信フォーム */
-    textarea {
-      width: 80%;
-      max-width: 480px;
-      height: 6rem;
-    }
-=======
->>>>>>> feature/gulp:css/scss/main.scss
   }
+  #contact p {
+    font-size: 1rem;
+    padding: 20px;
+  }
+  .page-title {
+    font-size: 1.2rem;
+  }
+  /* 送信フォーム */
+  textarea {
+    width: 80%;
+    max-width: 480px;
+     height: 6rem;
+  }
+}
 
 /* モバイル版
 ---------------------------------------*/
 
 @media (max-width: 480px) {
-<<<<<<< HEAD:css/common.css
-  /*　画面サイズが480px以下の場合ここの記述が適用される　*/
-  
-=======
   /*画面サイズが480px以下の場合ここの記述が適用される　*/
   /*共通*/
-
->>>>>>> feature/gulp:css/scss/main.scss
   /* ヘッダー部分 */
   #head_line {
     display: flex;
@@ -943,24 +889,18 @@ input[type="submit"] {
   .main-nav  { display: none}
   .botomm-nav {display: none}
 
-/* ホーム部分 */
+  /* ホーム部分 */
   body {
     line-height: 28px;
-<<<<<<< HEAD:css/common.css
     font-size: 14px;    
   }
 }
-/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+  /* パソコンで見たときは"pc"のclassがついた画像が表示される */
 .pc-only { display: block !important; }
 .sp-only { display: none !important; }
  
-/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+  /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
 @media only screen and (max-width: 480px) {
     .pc-only { display: none !important; }
     .sp-only { display: block !important; }
 }
-=======
-    font-size: 14px;
-  }
-}
->>>>>>> feature/gulp:css/scss/main.scss
