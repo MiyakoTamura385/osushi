@@ -730,7 +730,6 @@ div.homewrapper {
   flex-direction: row-reverse;
 } 
 
-// contact.html
 @media (max-width: 480px) {
   #kodawari_homewrapper {
     width: 100%;
@@ -842,8 +841,7 @@ textarea {
 input[type="submit"] {
   border: none;
   cursor: pointer;
-  line-height: 2;
-  color: aliceblue;
+  line-height: 2; 
   padding: 10px 20px;
   margin-bottom: 25px;
  }
@@ -867,7 +865,7 @@ input[type="submit"] {
     font-size: 1.2rem;
   }
   /* 送信フォーム */
-  textarea {
+  .textarea {
     width: 80%;
     max-width: 480px;
      height: 6rem;

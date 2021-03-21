@@ -23,10 +23,4 @@ var $slides = $(this).find('img'),
   slideCount = $slides.length,
   currentIndex = 0;
 
-  $(".slider").slick({
-    autoplay: true,
-    arrows: false,
-    dots: false,
-    autoplaySpeed: 1500,
-    speed: 1500,
-  });
+
