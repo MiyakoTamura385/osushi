@@ -1,7 +1,7 @@
 @import "variables";
 
 // Import dependencies
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "node_modules/slick-carousel/slick/slick-theme.scss";
 
@@ -331,6 +331,7 @@ div.infomation .info {
 .location-info {
   width: 22%;
   color: #eddcbc;
+  }
 
   h3 {
     font-size: 1.4rem;
@@ -341,7 +342,7 @@ div.infomation .info {
     padding: 12px 10px;
     white-space: nowrap;
     font-size: 1rem;
-
+  }
   // word-wrap: break-word;
   dt {
     color: #b0941e;
