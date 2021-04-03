@@ -7592,13 +7592,13 @@ header {
 /* ホーム
 -----------------------------*/
 /* スライドショー　*/
-.slideshow {
+#slideshow {
   height: 480px;
   overflow: hidden;
   position: relative;
   margin-bottom: 3rem; }
 
-.slideshow img {
+#slideshow img {
   display: none;
   left: 63.5%;
   margin-left: -800px;
@@ -7606,18 +7606,9 @@ header {
   -o-object-fit: cover;
      object-fit: cover; }
 
-@media (max-width: 480px) {
-  .slideshow {
-    width: 720px;
-    height: 300px;
-    margin-bottom: 10px; }
-  .slideshow img {
-    width: auto; } }
-
-/* こだわり部分 */
+/*--- こだわり部分 -----*/
 #main_homewrapper {
   background-image: url("../img/1600uni.jpg");
-  max-width: 1600px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -7648,34 +7639,29 @@ header {
 
 @media (max-width: 480px) {
   #main_homewrapper {
-    width: auto; }
-  div.main_homewrapper {
-    width: 100%;
-    height: 500px;
-    padding-top: 20px; }
-    div.main_homewrapper h1 {
-      width: 170px;
-      height: 60px;
-      line-height: 60px;
-      font-size: 1.5rem; }
-    div.main_homewrapper p {
-      font-size: 15px;
-      top: calc(15% - 20px);
-      padding: 15px;
-      line-height: 1.75rem; }
+    width: auto;
+    height: auto; }
+  #main_homewrapper h1 {
+    width: 130px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.5rem; }
+  p {
+    top: calc(15% - 20px);
+    padding: 15px;
+    line-height: 1.75rem; }
   #main_homewrapper .pc-only {
     display: none;
     margin: auto; }
   .sp-only {
     text-align: center;
     color: #fff;
-    margin: 20px;
-    font-size: 0.75rem; } }
+    margin: 10px 20px;
+    font-size: 0.95rem; } }
 
 /* お知らせ部分 */
 #main_infomation {
   background-image: url("../../img/haikei.jpg");
-  max-width: 1600px;
   margin-top: 3rem;
   -o-object-fit: cover;
      object-fit: cover; }
@@ -7750,8 +7736,8 @@ dt {
   color: #b0941e; }
 
 .location-map {
-  width: auto;
-  height: 300px;
+  width: 600px;
+  height: 700px;
   padding-top: 50px;
   margin-top: -50px; }
 
@@ -7760,7 +7746,7 @@ dt {
   .wrapper {
     flex-direction: column; }
   .location-map {
-    width: 50%;
+    width: auto;
     height: 250px;
     text-align: center;
     padding: 20px 10px; }

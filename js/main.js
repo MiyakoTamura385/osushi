@@ -35,6 +35,6 @@ var $slides = $(this).find('img'),
   slideCount = $slides.length,
   currentIndex = 0;
 
-
+// slick  ////////////////////
 
 //# sourceMappingURL=main.js.map
