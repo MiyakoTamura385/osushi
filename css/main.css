@@ -7488,7 +7488,9 @@ header {
   #head_line_contact {
     display: none; } }
 
-/* ハンバーガーアイコン */
+/* nav
+-----------------------------------------------------*/
+/*ハンバーガーアイコン*/
 .btn-burger {
   cursor: pointer;
   display: block;
@@ -7503,6 +7505,7 @@ header {
   position: absolute;
   top: 0;
   right: 0;
+  left: 0;
   bottom: 0;
   height: 2px;
   /*線の太さ*/
@@ -7541,70 +7544,62 @@ header {
 .icon, .icon:before, .icon:after {
   transition: all .8s; }
 
-/*表示されるメニューの中身*/
-.nav {
-  background-color: rgba(0, 0, 0, 0.85); }
+/*中身*/
+.nav1 {
+  background-color: #000000; }
 
-.main-nav a {
+.nav-list1 a {
   display: block;
   text-decoration: none;
   color: #fff; }
 
-.main-nav {
+.nav-list1 {
   list-style: none;
   display: none;
   margin: 0;
   padding-left: 20px; }
 
-.main-nav li {
+.nav-list1 li {
   margin: 0;
   padding: 10px; }
 
-.nav-toggle:checked ~ .nav .main-nav {
+.nav-toggle:checked ~ .nav1 .nav-list1 {
   display: block; }
 
 /* --------------------------------------------------
-  幅768px以上のスタイル指定 ここから
+幅768px以上のスタイル指定 ここから
 -------------------------------------------------- */
 @media screen and (min-width: 768px) {
   /* ハンバーガーボタン */
   .btn-burger {
     display: none;
     /*768px以上では使用しない */ }
-  .nav-toggle:checked ~ .nav .main-nav {
+  .nav-toggle:checked ~ .nav1 .nav-list1 {
     display: none; }
-  .main-nav li:not(:last-child) {
-    border-right: 1px solid #fff; }
-  .main-nav {
+  .nav {
+    height: 75px; }
+  .nav-list1 {
     display: flex;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    list-style: none;
-    justify-content: center; }
-  .main-nav li {
-    margin-left: 36px; }
-  .main-nav a {
+    justify-content: center;
+    height: 75px;
+    align-items: center;
+    font-size: 1.25rem; }
+  .nav-list1 li:not(:last-child) {
+    border-right: 1px solid #fff; }
+  .nav-list1 a {
     color: #eddcbc; }
-  .main-nav a:hover {
+  .nav-list1 a:hover {
     color: #b0941e;
     text-decoration: none; } }
 
 /* ホーム
 -----------------------------*/
 /* スライドショー　*/
-#slideshow {
-  height: 480px;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 3rem; }
-
-#slideshow img {
-  display: none;
-  left: 63.5%;
-  margin-left: -800px;
-  position: absolute;
+#carouselExampleFade img {
+  height: 500px;
   -o-object-fit: cover;
-     object-fit: cover; }
+     object-fit: cover;
+  margin-bottom: 55px; }
 
 /*--- こだわり部分 -----*/
 #main_homewrapper {
@@ -7815,7 +7810,7 @@ iframe {
 footer {
   background-color: #eddcbc;
   text-align: center;
-  padding: 0.5rem; }
+  padding: 10px; }
 
 footer p {
   color: #000000;
@@ -7823,7 +7818,8 @@ footer p {
 
 @media (max-width: 480px) {
   footer {
-    width: 100%; } }
+    width: 100%;
+    padding-bottom: 0.5px; } }
 
 /*------ MENU html
 -----------------------------------*/

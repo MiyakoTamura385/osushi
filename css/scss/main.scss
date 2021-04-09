@@ -59,7 +59,10 @@ header {
  }
 }
 
-/* ハンバーガーアイコン */
+/* nav
+-----------------------------------------------------*/
+///////////*****　お試しハンバーメニュー *******////////////
+/*ハンバーガーアイコン*/
 .btn-burger {
   cursor: pointer;
   display: block;
@@ -69,11 +72,13 @@ header {
   top: 5px;
   right: 10px;
 }
+
 /*ハンバーガーアイコンを作る三本線*/
 .icon, .icon:before, .icon:after {
   position: absolute;
   top: 0;
   right: 0;
+  left: 0;
   bottom: 0;
   height: 2px; /*線の太さ*/
   width: 35px; /*線の長さ*/
@@ -83,19 +88,21 @@ header {
   content: '';
   cursor: pointer;
   margin: auto;
-
 }
+
 /*三本線の間隔*/
 .icon:before {
-  top: 20px;
+top: 20px;
 }
 .icon:after {
-  top: -20px;
+top: -20px;
 }
+
 /*チェックボックス非表示*/
 .nav-toggle {
   display: none;
 }
+
 /*アイコンをクリックしたら*/
 .nav-toggle:checked ~ .btn-burger .icon {
   background: transparent;
@@ -108,86 +115,84 @@ header {
   transform: rotate(45deg);
   top: 0;
 }
+
 .icon,
 .icon:before,
 .icon:after {
   transition: all .8s;
 }
-/*表示されるメニューの中身*/
-.nav {
-  background-color: rgba(0, 0, 0, .85);
+
+
+/*中身*/
+.nav1 {
+  background-color: #000000;
+  
 }
-.main-nav a {
+.nav-list1 a {
   display: block;
   text-decoration: none;
   color: #fff;
 }
-.main-nav {
+
+.nav-list1 {
   list-style: none;
   display: none;
   margin: 0;
   padding-left: 20px;
 }
-.main-nav li {
+
+.nav-list1 li {
   margin: 0;
   padding: 10px;
 }
-.nav-toggle:checked ~ .nav .main-nav {
+
+.nav-toggle:checked ~ .nav1 .nav-list1 {
   display: block;
 }
 /* --------------------------------------------------
-  幅768px以上のスタイル指定 ここから
+幅768px以上のスタイル指定 ここから
 -------------------------------------------------- */
 @media screen and (min-width: 768px) {
-  /* ハンバーガーボタン */
+/* ハンバーガーボタン */
   .btn-burger {
-    display: none; /*768px以上では使用しない */
+    display: none;  /*768px以上では使用しない */
   }
-  .nav-toggle:checked ~ .nav .main-nav {
+  .nav-toggle:checked ~ .nav1 .nav-list1 {
     display: none;
   }
-  .main-nav li:not(:last-child) {
+  .nav {
+    height: 75px;
+  }
+  .nav-list1 {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    align-items: center;
+    font-size: 1.25rem;
+  }
+  .nav-list1 li:not(:last-child) {
     border-right: 1px solid #fff;
   }
-  .main-nav {
-    display: flex;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    list-style: none;
-    justify-content: center;
-  }
-  .main-nav li {
-    margin-left: 36px;
-  }
-  .main-nav a {
+  .nav-list1 a {
     color: #eddcbc;
   }
-  .main-nav a:hover {
+  .nav-list1 a:hover {
     color: #b0941e;
     text-decoration: none;
   }
 }
 
 
+
+
 /* ホーム
 -----------------------------*/
 /* スライドショー　*/
-#slideshow {
-  height: 480px;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 3rem;
-}
-#slideshow img {
-  display: none;
-  left: 63.5%;
-  margin-left: -800px;
-  position: absolute;
+#carouselExampleFade img {
+  height: 500px;
   object-fit: cover;
+  margin-bottom: 55px;
 }
-
-
-  
 
 
 /*--- こだわり部分 -----*/
@@ -430,7 +435,7 @@ iframe {
 footer {
   background-color: #eddcbc;
   text-align: center;
-  padding: 0.5rem;
+  padding: 10px;
 }
 footer p {
   color: #000000;
@@ -440,6 +445,7 @@ footer p {
 @media (max-width: 480px) {
   footer {
     width: 100%;
+    padding-bottom: 0.5px;
   }
 }
 
@@ -900,3 +906,5 @@ input[type="submit"] {
     .pc-only { display: none !important; }
     .sp-only { display: block !important; }
 }
+
+
