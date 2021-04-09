@@ -7484,13 +7484,14 @@ header {
 
 @media (max-width: 480px) {
   #head_line {
-    width: 100%; }
+    padding-bottom: 20px; }
+  #haed_line a {
+    font-size: 2.5rem; }
   #head_line_contact {
     display: none; } }
 
 /* nav
 -----------------------------------------------------*/
-/*ハンバーガーアイコン*/
 .btn-burger {
   cursor: pointer;
   display: block;
@@ -7551,7 +7552,8 @@ header {
 .nav-list1 a {
   display: block;
   text-decoration: none;
-  color: #fff; }
+  color: #fff;
+  font-size: 1rem; }
 
 .nav-list1 {
   list-style: none;
@@ -7582,11 +7584,11 @@ header {
     display: flex;
     justify-content: center;
     height: 75px;
-    align-items: center;
-    font-size: 1.25rem; }
+    align-items: center; }
   .nav-list1 li:not(:last-child) {
     border-right: 1px solid #fff; }
   .nav-list1 a {
+    font-size: 1.25rem;
     color: #eddcbc; }
   .nav-list1 a:hover {
     color: #b0941e;
@@ -7601,12 +7603,18 @@ header {
      object-fit: cover;
   margin-bottom: 55px; }
 
+@media (max-width: 480px) {
+  #carouselExampleFade img {
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 280px; } }
+
 /*--- こだわり部分 -----*/
 #main_homewrapper {
   background-image: url("../img/1600uni.jpg");
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
   height: 580px;
   padding-top: 45px;
   margin-bottom: 24px; }
@@ -7619,6 +7627,9 @@ header {
     font-size: 34px;
     color: #595757;
     background-color: rgba(255, 255, 255, 0.6); }
+  #main_homewrapper #mainwrapper a {
+    text-decoration: none;
+    color: #595757; }
 
 #main_homewrapper .pc-only {
   width: 85%;
@@ -7634,7 +7645,10 @@ header {
 
 @media (max-width: 480px) {
   #main_homewrapper {
+    background-image: url("../img/sp.kodawari.jpg");
     width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: auto; }
   #main_homewrapper h1 {
     width: 130px;
@@ -7652,7 +7666,25 @@ header {
     text-align: center;
     color: #fff;
     margin: 10px 20px;
-    font-size: 0.95rem; } }
+    font-size: 0.95rem; }
+  #main_homewrapper2 {
+    background-image: url("../img/sp.kodawari.jpg");
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: auto; }
+  #main_homewrapper2 h1 {
+    width: 130px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #595757;
+    background-color: rgba(255, 255, 255, 0.6); }
+  #main_homewrapper2 p {
+    top: calc(15% - 20px);
+    padding: 15px;
+    line-height: 1.75rem; } }
 
 /* お知らせ部分 */
 #main_infomation {
@@ -7818,8 +7850,7 @@ footer p {
 
 @media (max-width: 480px) {
   footer {
-    width: 100%;
-    padding-bottom: 0.5px; } }
+    padding: 0.1px 0; } }
 
 /*------ MENU html
 -----------------------------------*/
