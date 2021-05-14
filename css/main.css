@@ -7666,25 +7666,7 @@ header {
     text-align: center;
     color: #fff;
     margin: 10px 20px;
-    font-size: 0.95rem; }
-  #main_homewrapper2 {
-    background-image: url("../img/sp.kodawari.jpg");
-    width: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: auto; }
-  #main_homewrapper2 h1 {
-    width: 130px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #595757;
-    background-color: rgba(255, 255, 255, 0.6); }
-  #main_homewrapper2 p {
-    top: calc(15% - 20px);
-    padding: 15px;
-    line-height: 1.75rem; } }
+    font-size: 0.95rem; } }
 
 /* お知らせ部分 */
 #main_infomation {
