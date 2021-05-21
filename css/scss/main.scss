@@ -205,7 +205,7 @@ top: -20px;
 
 /*--- こだわり部分 -----*/
 #main_homewrapper {
-  background-image: url("../img/1600uni.jpg");
+  background-image: url(../img/1600uni.jpg);
   object-fit: cover;
   height: 580px;
   padding-top: 45px;
@@ -240,7 +240,7 @@ top: -20px;
 
 @media (max-width: 480px) {
   #main_homewrapper {
-    background-image: url("../img/sp.kodawari.jpg"); 
+    background-image: url(../img/sp.kodawari.jpg); 
     width: auto;
     object-fit: cover;
     height: auto;   
@@ -270,7 +270,7 @@ top: -20px;
 
 /* お知らせ部分 */
 #main_infomation {
-  background-image: url("../../img/haikei.jpg");
+  background-image: url(../img/haikei.jpg);
   margin-top: 3rem;
   object-fit: cover;
 }
@@ -558,7 +558,7 @@ header .container {
 /* 見出しの部分
 ----------------------------------*/
 #menu_homewrapper {
-  background-image: url("../../img/menu1600toro.jpg");
+  background-image: url(../img/menu1600toro.jpg);
   background-size: cover;
   object-fit: cover;
 }
@@ -706,7 +706,7 @@ div.homewrapper {
 /* kodawari html
 --------------------------------*/
 #kodawari_homewrapper {
-  background-image: url("../../img/kodawari1600syokunin.jpg");
+  background-image: url(../img/kodawari1600syokunin.jpg);
   background-size: cover;
   object-fit: cover;
 }
@@ -777,7 +777,7 @@ div.homewrapper {
 /* contact.html
 ---------------------------------------*/
 #contact_homewrapper {
-  background-image: url("../../img/contact1600hashi.jpg");
+  background-image: url(../img/contact1600hashi.jpg);
   background-size: cover;
   object-fit: cover;
 }
