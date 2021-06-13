@@ -7854,6 +7854,13 @@ footer p {
 
 /*------ MENU html
 -----------------------------------*/
+a {
+  color: #000000; }
+
+a:hover {
+  text-decoration: none;
+  color: #000000; }
+
 /* ヘッダーにボタン配置 */
 #menu {
   background-color: rgba(0, 0, 0, 0.85); }
@@ -7877,6 +7884,9 @@ header .container {
 
 .title-block h1 {
   color: #000000; }
+
+.title-block a {
+  font-size: 27px; }
 
 .hamburger {
   flex: 0 0 32px;
@@ -8157,6 +8167,10 @@ div.homewrapper {
   margin-bottom: 30px;
   color: #fff;
   padding-bottom: 30px; }
+
+#contact a {
+  color: #fff;
+  margin-left: 20px; }
 
 form div {
   margin-bottom: 14px;
