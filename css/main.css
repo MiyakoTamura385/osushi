@@ -7854,6 +7854,13 @@ footer p {
 
 /*------ MENU html
 -----------------------------------*/
+#menu h1 a {
+  color: #000000;
+  font-size: 34px; }
+
+#menu h1 a:hover {
+  text-decoration: none; }
+
 /* ヘッダーにボタン配置 */
 #menu {
   background-color: rgba(0, 0, 0, 0.85); }
@@ -8006,7 +8013,7 @@ div.homewrapper {
 /*------ 画像とテキストの横並び -------*/
 .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   margin-top: 20px; }
 
@@ -8063,6 +8070,13 @@ div.homewrapper {
 
 /* kodawari html
 --------------------------------*/
+#kodawari h1 a {
+  color: #000000;
+  font-size: 34px; }
+
+#kodawari h1 a:hover {
+  text-decoration: none; }
+
 #kodawari_homewrapper {
   background-image: url(../img/kodawari1600syokunin.jpg);
   background-size: cover;
@@ -8082,7 +8096,7 @@ div.homewrapper {
 /*----- 横並び ---------*/
 .flexpolicy {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   margin-top: 20px; }
 
